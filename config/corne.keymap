@@ -36,7 +36,7 @@
    &kp LCTRL  &trans       &trans       &trans       &trans       &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &none &to 3 &none &none &none   &trans   &trans   &trans &trans    &none &none
                                            &kp LGUI  &trans       &kp SPACE      &kp RET  &trans   &kp RALT
-                        >;
+                       >;
                 };
 
                 raise_layer {
@@ -58,9 +58,9 @@
 // | CTRL |  a  |  o  |  e  |  u  |  i  |   |  d  |  h  |  t  |  n  |  s  |  -  |
 // | SHFT |  '  |  q  |  j  |  k  |  x  |   |  b  |  m  |  w  |  v  |  z  |  ESC   |
 //                    | GUI | MO4 | SPC |   | ENT |  MO5 | ALT |
-                        bindings = <
-   &kp  TAB  &kp QMARK &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G  &kp C &kp R &kp L &kp BSPC
-   &kp LCTRL &kp A   &kp O &kp E   &kp U   &kp I      &kp D &kp H &kp T  &kp N &kp S &kp MINUS
+                   bindings = <
+   &kp  TAB  &kp SEMI &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G  &kp C &kp R &kp L &kp BSPC
+   &kp LCTRL &kp A   &kp O &kp E   &kp U  &kp I      &kp D &kp H &kp T  &kp N &kp S &kp MINUS
    &kp LSHFT &kp SQT   &kp Q &kp J   &kp K   &kp X      &kp B  &kp M  &kp W  &kp V &kp Z &kp ESC
                              &kp LGUI &mo 4   &kp SPACE   &kp RET   &mo 5    &kp RALT
                         >;
@@ -68,12 +68,12 @@
                 dvorak-2 {
 // -----------------------------------------------------------------------------------------
 // |  ~   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | CTRL |     |     |     |     |     |   |    |    |    |    |    |      |
+// | CTRL |     |     |     |     |     |   |  PIPE  |    |    |    |    |      |
 // | SHFT | TO1 |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TILDE2  &kp 1 &kp 2 &kp 3 &kp 4 &kp 5   &kp 6 &kp 7  &kp 8 &kp 9 &kp 0 &kp BSPC
-   &kp LCTRL &none   &none &none   &none   &none      &kp PRCNT  &kp GRAVE &mt RALT W  &kp CARET &kp HASH &none
+   &kp TILDE   &kp 1 &kp 2 &kp 3 &kp 4 &kp 5   &kp 6 &kp 7  &kp 8 &kp 9 &kp 0 &kp BSPC
+   &kp LCTRL &none   &none &none   &none   &none      &kp PIPE  &kp AT &kp QMARK  &none &none &none
    &kp LSHFT &to 1   &none &none   &none   &none      &none  &none  &none  &none &none &none
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
@@ -86,7 +86,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp PLUS  &kp LBKT &kp LBRC &kp LPAR &kp AMPS &kp EQUAL   &kp RPAR  &kp RBRC  &kp RBKT &kp ASTRK &kp EXCL &kp BSPC
-   &kp LCTRL &kp DLLR   &kp UP &none   &none   &none      &none  &mt LSHIFT GRAVE &mt RALT Q  &kp BSLH &kp HASH &none
+   &kp LCTRL &kp DLLR   &kp UP &none   &none   &none      &none  &mt LSHIFT GRAVE &kp FSLH  &kp BSLH &kp HASH &none
    &kp LSHFT &kp LEFT   &kp DOWN &kp RIGHT   &none   &none      &none  &none  &none  &none &none &none
                              &kp LGUI &none   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
