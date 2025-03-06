@@ -69,12 +69,12 @@
 // -----------------------------------------------------------------------------------------
 // |  ~   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
 // | CTRL |     |     |     |     |     |   |  PIPE  |  @  |    |    |    |      |
-// | SHFT | TO1 |     |     |     |     |   |     |     |     |     |     |      |
+// | SHFT | TO1 |     |     |     |     |   |  HOME   |  END   |  PAGEUP   | PAGEDOWN  |    |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TILDE   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7  &kp N8 &kp N9 &kp N0 &kp BSPC
    &kp LCTRL &none   &none &none   &none   &none      &kp PIPE  &kp AT &none  &none &none &none
-   &kp LSHFT &to 1   &none &none   &none   &none      &mt LALT A  &mt LALT O &mt LALT E  &mt LALT U &mt LALT I &none
+   &kp LSHFT &to 1   &none &none   &none   &none      &kp HOME  &kp END &kp PG_UP  &kp PG_DN &none &none
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
