@@ -29,12 +29,12 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
 // | CTRL |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     | BTCLR|
+// | SHFT |     | TO3 |     |     |     |   |     |     |     |     |     | BTCLR|
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &kp LCTRL  &trans       &trans       &trans       &trans       &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &trans   &trans &trans    &studio_unlock &bt BT_CLR
+   &kp LSHFT  &none &to 3 &none &none &none   &trans   &trans   &trans &trans    &none &none
                                            &kp LGUI  &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
@@ -52,12 +52,44 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
-                extra1 {
-            status = "reserved";
-        };
-
-        extra2 {
-            status = "reserved";
-        };
+                 dvorak {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  ;  |  ,  |  .  |  p  |  y  |   |  f  |  g  |  c  |  r  |  l  | BSPC |
+// | CTRL |  a  |  o  |  e  |  u  |  i  |   |  d  |  h  |  t  |  n  |  s  |  -  |
+// | SHFT |  '  |  q  |  j  |  k  |  x  |   |  b  |  m  |  w  |  v  |  z  |  ~   |
+//                    | GUI | MO4 | SPC |   | ENT |  MO5 | ALT |
+                        bindings = <
+   &kp  TAB  &kp SEMI &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G  &kp C &kp R &kp L &kp BSPC
+   &kp LCTRL &kp A   &kp O &kp E   &kp U   &kp I      &kp D &kp H &kp T  &kp N &kp S &kp MINUS
+   &kp LSHFT &kp SQT   &kp Q &kp J   &kp K   &kp X      &kp B  &kp M  &kp W  &kp V &kp Z &kp TILDE
+                             &kp LGUI &mo 4   &kp SPACE   &kp RET   &mo 5    &kp RALT
+                        >;
+                };
+                dvorak-2 {
+// -----------------------------------------------------------------------------------------
+// |  ~   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
+// | CTRL |     |     |     |     |     |   |  %  |  `  |  ?  |  ^  |  #  |      |
+// | SHFT | TO1 |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TILDE  &kp 1 &kp 2 &kp 3 &kp 4 &kp 5   &kp 6 &kp 7  &kp 8 &kp 9 &kp 0 &kp BSPC
+   &kp LCTRL &none   &none &none   &none   &none      &kp PRCNT  &kp GRAVE &kp QMARK  &kp CARET &kp HASH &none
+   &kp LSHFT &to 1   &none &none   &none   &none      &none  &none  &none  &none &none &none
+                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                        >;
+                };
+                dvorak-3 {
+// -----------------------------------------------------------------------------------------
+// |  +   |  [  |  {  |  (  |  &  |  =  |   |  )  |  }  |  ]  |  *  |  !  | BSPC |
+// | CTRL |  $  |  UP |     |     |     |   |  %  |  `  |  ?  |  ^  |  #  |      |
+// | SHFT | LFT | DWN | RGT |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp PLUS  &kp LBKT &kp LBRC &kp LPAR &kp AMPS &kp EQUAL   &kp RPAR  &kp RBRC  &kp RBKT &kp ASTRK &kp EXCL &kp BSPC
+   &kp LCTRL &kp DLLR   &kp UP &none   &none   &none      &kp PRCNT  &kp GRAVE &kp QMARK  &kp CARET &kp HASH &kp GRAVE
+   &kp LSHFT &kp LEFT   &kp DOWN &kp RIGHT   &none   &none      &none  &none  &none  &none &none &none
+                             &kp LGUI &none   &kp SPACE   &kp RET   &trans    &kp RALT
+                        >;
+                };
         };
 };
