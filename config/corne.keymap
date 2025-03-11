@@ -82,12 +82,12 @@
 // ----------------------------------------------------------------------------------------
 // |  +   |  [  |  {  |  (  |  &  |  =  |   |  )  |  }  |  ]  |  *  |  !  | BSPC |
 // | CTRL |  $  |  UP |     |     |     |   |  %  |  '  |  /  |  \  |  #  | CARET |
-// | SHFT | LFT | DWN | RGT |     |     |   |     |     |     |     |     |      |
+// | SHFT | LFT | DWN | RGT |     |     |   |     |     |     |  btpr1   |  btpr2   |  btclear    |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp PLUS  &kp LBKT &kp LBRC &kp LPAR &kp AMPS &kp EQUAL   &kp RPAR  &kp RBRC  &kp RBKT &kp ASTRK &kp EXCL &kp CAPS
    &kp LCTRL &kp DLLR   &kp UP &none   &none   &none      &kp PRCNT  &kp SQT &kp FSLH  &kp BSLH &kp HASH &kp CARET
-   &kp LSHFT &kp LEFT   &kp DOWN &kp RIGHT   &none   &none      &none  &none  &none  &none &none &none
+   &kp LSHFT &kp LEFT   &kp DOWN &kp RIGHT   &none   &none      &none  &none  &none  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR
                              &kp LGUI &none   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
