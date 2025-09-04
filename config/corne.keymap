@@ -81,12 +81,12 @@
                 dvorak-3 {
 // ----------------------------------------------------------------------------------------
 // |  +   |  [  |  {  |  (  |  &  |  =  |   |  )  |  }  |  ]  |  *  |  !  | BSPC |
-// | CTRL |  $  |  UP |     |     |     |   |  %  |  '  |  /  |  \  |  #  | CARET |
+// | CTRL |  $  |  UP |  cedila   |     |     |   |  %  |  '  |  /  |  \  |  #  | CARET |
 // | SHFT | LFT | DWN | RGT |     |     |   |     |     |     |  btpr1   |  btpr2   |  btclear    |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp PLUS  &kp LBKT &kp LBRC &kp LPAR &kp AMPS &kp EQUAL   &kp RPAR  &kp RBRC  &kp RBKT &kp ASTRK &kp EXCL &kp BSPC
-   &kp LCTRL &kp DLLR   &kp UP &none   &none   &none      &kp PRCNT  &kp SQT &kp FSLH  &kp BSLH &kp HASH &kp CARET
+   &kp LCTRL &kp DLLR   &kp UP &kp LALT(COMMA)   &none   &none      &kp PRCNT  &kp SQT &kp FSLH  &kp BSLH &kp HASH &kp CARET
    &kp LSHFT &kp LEFT   &kp DOWN &kp RIGHT   &none   &none      &bt BT_PRV  &bt BT_NXT  &none  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_CLR_ALL
                              &kp LGUI &none   &kp SPACE   &kp RET   &trans    &kp LALT
                         >;
